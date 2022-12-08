@@ -1,0 +1,199 @@
+$linkText: black;
+$linkFamily: 'Poppins', sans-serif;
+
+body {
+    max-width: 100%;
+    height: auto;
+    margin: 0%;
+    background: rgba(249, 249, 249, 1);
+}
+
+.topnav { 
+    background: white;
+    width: 100%;
+    height: 100px;
+    border-bottom: 5px solid #926B5A;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigate {
+    position: absolute;
+    right: 80%;
+}
+
+.AboutUs {
+    text-decoration: none;
+    padding: 30px;
+    color: $linkText;
+    font-family: $linkFamily;
+    font-size: 18px;
+}
+
+.Contact {
+    text-decoration: none;
+    color: $linkText;
+    font-family: $linkFamily;
+    font-size: 18px;
+}
+
+.logo {
+    width: 290px;
+    height: 43px;
+    padding-top: 10px;
+}
+
+.icons {
+    position: absolute;
+    left: 83%;
+}
+
+.search-wrapper {
+    position: absolute;
+    right: 30%;
+    font-family: 'Poppins', sans-serif;
+}
+.search {
+    font-family: 'Poppins', sans-serif;
+    width: 25px;
+    height: 25px;
+}
+
+.shoppingbag {
+    width: 25px;
+    height: 30px;
+}
+
+.favorites {
+    width: 30px;
+    height: 30px;
+    padding-left: 60px;
+    padding-right: 60px; 
+}
+
+.user {
+    width: 25px;
+    height: 30px;
+}
+
+.products {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.separatefirstrow {
+    background: white;
+    min-width: 400px;
+    height: 550px;
+    margin: 10px;  
+    box-shadow: 0 4px 8px 0 rgba(146, 107, 90, 0.5), 0 6px 20px 0 rgba(146, 107, 90, 0.3);
+    position: relative;
+
+    .itemimg {
+        width: 400px;
+        height: 400px;
+    }
+    h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Raleway', sans-serif;
+        font-size: 28px;
+    }
+
+    .basketBtn {
+        position: absolute;
+        left: 125px;
+        width: 155px;
+        height: 40px;
+        font-size: 16px;
+        border: none;
+        background: rgba(146, 107, 90, 0.63);
+        color: white;
+        border-radius: 4%;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .basketBtn:hover {
+        background: #926B5A;
+    }
+    
+    .favorites {
+        position: absolute;
+        left: 290px;
+        bottom: 20px;
+    }
+
+    p {
+        position: absolute;
+        left: 15px;
+        bottom: 3px;
+        font-family:'Raleway', sans-serif;
+        font-size: 25px;
+    }
+}
+
+.separatesecondrow {
+    background: white;
+    width: 400px;
+    height: 550px;
+    margin: 10px;  
+    box-shadow: 0 4px 8px 0 rgba(146, 107, 90, 0.5), 0 6px 20px 0 rgba(146, 107, 90, 0.3); 
+    position: relative;
+
+    .itemimg {
+        width: 400px;
+        height: 400px;
+    }
+
+    h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Raleway', sans-serif;
+        font-size: 28px;
+    }
+
+    .basketBtn {
+        position: absolute;
+        left: 125px;
+        width: 155px;
+        height: 40px;
+        font-size: 16px;
+        border: none;
+        background: rgba(146, 107, 90, 0.63);
+        color: white;
+        border-radius: 4%;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .basketBtn:hover {
+        background: #926B5A;
+    }
+    
+    .favorites {
+        position: absolute;
+        left: 290px;
+        bottom: 20px;
+    }
+    p {
+        position: absolute;
+        left: 15px;
+        bottom: 3px;
+        font-family:'Raleway', sans-serif;
+        font-size: 25px;
+    }
+}
+
+.footerSP {
+    background: rgba(146, 107, 90, 0.63);
+
+    .adress {
+        padding: 50px;
+    }
+}
