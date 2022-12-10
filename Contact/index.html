@@ -4,10 +4,154 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/Contact/Contactstyles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&family=Poppins&family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <title>Kontakt</title>
 </head>
 <body>
-    
-    <h1>Kontakt</h1>
+
+    <nav class="topnav">
+
+        <div class="navigate">
+            <a class="AboutUs" href="../AboutUs/index.html">Om Oss</a>
+            <a class="Products" href="../Products/index.html">Produkter</a>
+        </div>
+
+        <div>
+            <a href="../index.html"><img class="logo" src="/logo/logo..png" alt="Företagets logga som heter Mocco."></a>
+        </div>
+
+        <div class="search-wrapper">
+            <img src="../icons/Search.png" alt="Förstoringsglas" class="search">
+            <label for="">Sök...</label>
+        </div>
+        <aside class="icons">
+            <a href="#"><img src="../icons/user.png" alt="Bild på en användarikon" class="user"></a>
+            <a href="#"><img src="../icons/favorite.png" alt="Bild på ett hjärta" class="favorites"></a>
+            <a href="#"><img src="../icons/shoppingbag.png" alt="Bild på en kasse" class="shoppingbag"></a>
+        </aside>
+
+        </div>
+    </nav>
+
+    <main>
+
+        <h1>FAQ</h1>
+        <!--Some frequently asked questions-->
+        <section>
+
+        <article id="wrapper">
+            <ul>
+                <li>
+                    <input type="checkbox" checked>
+                    <i></i>
+                    <h2>Var är min beställning?</h2>
+                    <p>När din beställning har skickats från vårt lager kommer du att få en leveransbekräftelse med all leveransinformation via e-mail.</p>
+                    <p>*Under perioder med högre tryck kan leveranstiderna bli längre p.g.a. ett ökat antal beställningar och längre hanteringstid hos transportleverantörer. Vi kommer att skicka dig uppdateringar om något skulle vara utöver det vanliga för att hålla dig informerad.</p>
+                    <p>Du kan spåra paketet via vår <a href="#">Spårningssida</a>. Där hittar du information om leveransen av ditt paket genom att ange din e-postadress och postnummer, eller ditt spårningsnummer.</p>
+                    <p>Tänk på att det kan ta 24-48 timmar från det att ditt paket har skickats från oss för att spårningsinformationen ska uppdateras.</p>
+                </li>
+
+                <li>
+                    <input type="checkbox" checked>
+                    <i></i>
+                    <h2>Hur fungerar returer och återbetalning?</h2>
+                    <p>Du kan enkelt registrera din retur under ”Mina beställningar”.</p>
+                    <p>Packa dina varor säkert och skicka tillbaka dem till oss med hjälp av returetiketten du fick med din order. Vi kommer att tillämpa en returavgift på 39 SEK. Så snart din retur har hanterats kommer du att återbetalas via samma betalningsmetod du valde för din beställning.</p>
+                    <p>Vår returprocess tar vanligtvis upp till 14 dagar från att vårt lager mottagit ordern. Under högsäsong kan denna tid vara något förlängd.</p>
+                </li>
+
+                <li>
+                    <input type="checkbox" checked>
+                    <i></i>
+                    <h2>Kan jag ändra/avbryta min order?</h2>
+                    <p>Nej, när din beställning har lagts och importerats till vårt system är det inte möjligt att redigera eller avbryta den.</p>
+                </li>
+
+                <li>
+                    <input type="checkbox" checked>
+                    <i></i>
+                    <h2>Jag har inte fått min orderbekräftelse!</h2>
+                    <p>När du lagt din beställning får du automatiskt en orderbekräftelse via e-post inom 24 timmar. Om du saknar din orderbekräftelse kan du kontrollera din skräppost. Vissa e-postleverantörer (inkl. Gmail) har aktiverat filter som flyttar nyhetsbrev till särskilda mappar.</p>
+                    <p>Om du var inloggad på ditt konto när du gjorde din beställning kan du alltid logg in och gå till Mitt konto för att se dina beställningar.</p>
+                    <p>Om du inte har fått din orderbekräftelse inom denna tidsram är du mer än välkommen att kontakta oss för ytterligare hjälp!</p>
+                </li>
+            </ul>
+        </article>
+
+        </section>
+
+        <!--The contact form-->
+        <section>
+            <!--
+            <form action="action_page.php">
+
+                <input type="text" class="userinfo" name="firstname" placeholder="Förnamn">
+                <input type="text" class="userinfo" name="lastname" placeholder="Efternamn">
+                <input type="text" class="userinfo" name="email" placeholder="E-postadress">
+                <input type="number" class="userinfo" name="phonenumber" placeholder="Telefonnummer">
+                
+                <label for="subject">Hur kan vi hjälpa dig?</label>
+                <textarea id="subject" name="subject" style="height:200px"></textarea>
+            
+                <input type="submit" value="Submit">
+                <button>Submit</button>
+            
+              </form>
+              -->
+
+              <form id="formwrapper">
+
+            <div class="leftside">
+                <div class="contactform">
+                <input type="text" class="userinfo" name="firstname" placeholder="Förnamn">
+                </div>
+                <div class="contactform">
+                <input type="text" class="userinfo" name="lastname" placeholder="Efternamn">
+                </div>
+                <div class="contactform">
+                <input type="text" class="userinfo" name="email" placeholder="E-postadress">
+                </div>
+
+                <div class="number">
+                <input type="text" class="countrynumber" name="countrynumber" placeholder="Landsnummer" value="+46">
+                <input type="text" class="phonenumber" name="phonenumber" placeholder="Mobilnummer">
+                </div>
+            </div>
+
+            
+                <div class="contactmessage">
+                <textarea name="message" class="textmessage" cols="30" rows="10" placeholder="Vad kan vi hjälpa dig med?"></textarea>
+                    <input type="file" name="selectedfile">
+                    <input type="submit" class="sendmessage" value="Skicka" name="submit">
+                </div>
+
+               
+              </form>
+        </section>
+
+    </main>
+
+
+    <footer class="footerSP">
+        <div class="logo">
+            <a href="index.html"><img src="/logo/logo..png" alt="" class="minilogo"></a>
+        </div>
+
+        <div class="content">
+            <p>Adress</p>
+            <p>Essinge Brogata 15</p>
+            <p>112 61 STOCKHOLM</p>
+        </div>
+
+        <div class="content">
+            <a class="underside" href="AboutUs/index.html">Om Oss</a>
+            <br>
+            <a class="underside" href="Products/index.html">Produkter</a>
+            <br>
+            <a class="underside" href="Contact/index.html">Kontakt</a>
+        </div>
+    </footer>
+
 </body>
 </html>
