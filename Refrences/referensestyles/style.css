@@ -113,6 +113,22 @@ h1 {
   font-size: 60px;
 }
 
+.leavereview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.leavereview h3 {
+  font-family: "Raleway", sans-serif;
+}
+.leavereview a {
+  text-decoration: none;
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+
 .footerSP {
   background: rgba(146, 107, 90, 0.63);
   font-family: "Poppins", sans-serif;
