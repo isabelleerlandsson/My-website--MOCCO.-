@@ -2,6 +2,7 @@ body {
     max-width: 100%;
     height: auto;
     margin: 0%;
+    background: rgba(249, 249, 249, 1);
 }
 
 .wholenavbar {
@@ -77,6 +78,64 @@ body {
         }
     }
 }
+
+.allreviews {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+
+    .placereview {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        h2 {
+            font-family: 'Raleway', sans-serif;
+        }
+
+        p {
+            font-family: 'Poppins', sans-serif;
+            width: 200px;
+            text-align: center;
+        }
+
+
+        .eachreview {
+            width: 200px;
+            height: 35px;
+            padding: 0px 70px 0px 70px;
+        }
+        
+
+    }
+
+}
+
+.switchpage {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+
+    a {
+        text-decoration: none;
+      }
+
+    a:hover {
+        background-color: rgba(146, 107, 90, 1);
+        color: white;
+    }
+  
+  .next {
+    background: rgba(146, 107, 90, 0.63);
+    color: white;
+    padding: 1px 40px;
+    font-size: 60px;
+  }
+}
+
 
 .footerSP {
     background: rgba(146, 107, 90, 0.63);

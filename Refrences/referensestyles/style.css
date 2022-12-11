@@ -2,6 +2,7 @@ body {
   max-width: 100%;
   height: auto;
   margin: 0%;
+  background: rgb(249, 249, 249);
 }
 
 .wholenavbar {
@@ -56,6 +57,52 @@ body {
 .wholenavbar .fourthnavpart .user {
   width: 25px;
   height: 30px;
+}
+
+.allreviews {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+.allreviews .placereview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.allreviews .placereview h2 {
+  font-family: "Raleway", sans-serif;
+}
+.allreviews .placereview p {
+  font-family: "Poppins", sans-serif;
+  width: 200px;
+  text-align: center;
+}
+.allreviews .placereview .eachreview {
+  width: 200px;
+  height: 35px;
+  padding: 0px 70px 0px 70px;
+}
+
+.switchpage {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.switchpage a {
+  text-decoration: none;
+}
+.switchpage a:hover {
+  background-color: rgb(146, 107, 90);
+  color: white;
+}
+.switchpage .next {
+  background: rgba(146, 107, 90, 0.63);
+  color: white;
+  padding: 1px 40px;
+  font-size: 60px;
 }
 
 .footerSP {
