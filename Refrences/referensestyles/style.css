@@ -59,6 +59,14 @@ body {
   height: 30px;
 }
 
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 46px;
+}
+
 .allreviews {
   display: flex;
   flex-direction: row;
