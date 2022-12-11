@@ -8,74 +8,78 @@ body {
     background: rgba(249, 249, 249, 1);
 }
 
-.topnav { 
+.wholenavbar {
     background: white;
     width: 100%;
     height: 100px;
-    border-bottom: 5px solid #926B5A;
-    position: relative;
+    border-bottom: 5px solid #926B5A; 
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-}
 
-.navigate {
-    position: absolute;
-    right: 80%;
-}
+    .firstnavpart {
 
-.AboutUs {
-    text-decoration: none;
-    padding: 30px;
-    color: $linkText;
-    font-family: $linkFamily;
-    font-size: 18px;
-}
+        .AboutUs {
+            text-decoration: none;
+            color: black ;
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+        }
 
-.Contact {
-    text-decoration: none;
-    color: $linkText;
-    font-family: $linkFamily;
-    font-size: 18px;
-}
+        .Products {
+            text-decoration: none;
+            padding: 30px;
+            color: black ;
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+        }
+        
+        .Contact {
+            text-decoration: none;
+            color: black ;
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+        }
+    }
 
-.logo {
-    width: 290px;
-    height: 43px;
-    padding-top: 10px;
-}
+    .secondnavpart {
 
-.icons {
-    position: absolute;
-    left: 83%;
-}
+        .logo {
+            width: 290px;
+            height: 43px;
+            padding-top: 10px;
+        } 
+    }
 
-.search-wrapper {
-    position: absolute;
-    right: 30%;
-    font-family: 'Poppins', sans-serif;
-}
-.search {
-    font-family: 'Poppins', sans-serif;
-    width: 25px;
-    height: 25px;
-}
+    .thirdnavpart {
 
-.shoppingbag {
-    width: 25px;
-    height: 30px;
-}
+        .search {
+            font-family: 'Poppins', sans-serif;
+            width: 25px;
+            height: 25px;
+        }
+    }
 
-.favorites {
-    width: 30px;
-    height: 30px;
-    padding-left: 60px;
-    padding-right: 60px; 
-}
+    .fourthnavpart {
 
-.user {
-    width: 25px;
-    height: 30px;
+        .shoppingbag {
+            width: 25px;
+            height: 30px;
+        }
+        
+        .favorites {
+            width: 30px;
+            height: 30px;
+            padding-left: 60px;
+            padding-right: 60px; 
+        }
+        
+        .user {
+            width: 25px;
+            height: 30px;
+        }
+    }
 }
 
 .products {
@@ -127,6 +131,10 @@ body {
         position: absolute;
         left: 290px;
         bottom: 20px;
+        width: 30px;
+        height: 30px;
+        padding-left: 60px;
+        padding-right: 60px; 
     }
 
     p {
@@ -180,6 +188,10 @@ body {
         position: absolute;
         left: 290px;
         bottom: 20px;
+        width: 30px;
+        height: 30px;
+        padding-left: 60px;            
+        padding-right: 60px; 
     }
 
     p {
@@ -203,7 +215,7 @@ body {
     
     .minilogo {
         width: 200px;
-        height: 40px;
+        height: 30px;
     }
 
     .underside {

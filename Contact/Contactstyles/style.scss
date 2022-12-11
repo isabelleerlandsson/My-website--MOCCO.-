@@ -2,76 +2,79 @@ body {
     max-width: 100%;
     height: auto;
     margin: 0%;
-    background: rgba(249, 249, 249, 1);
 }
-
-.topnav { 
+.wholenavbar {
     background: white;
     width: 100%;
     height: 100px;
     border-bottom: 5px solid #926B5A; 
-    position: relative;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-}
 
-.AboutUs {
-    text-decoration: none;
-    color: black ;
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-}
-.Products {
-    text-decoration: none;
-    padding: 30px;
-    color: black ;
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-}
+    .firstnavpart {
 
-.logo {
-    width: 290px;
-    height: 43px;
-    padding-top: 10px;
-}
+        .AboutUs {
+            text-decoration: none;
+            color: black ;
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+        }
 
-.backgroundimg {
-    width: 100%;
-    height: 100%;
-}
+        .Products {
+            text-decoration: none;
+            padding: 30px;
+            color: black ;
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+        }
+        
+        .Contact {
+            text-decoration: none;
+            color: black ;
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+        }
+    }
 
-.icons {
-    position: absolute;
-    left: 83%;
-}
+    .secondnavpart {
 
-.search-wrapper {
-    position: absolute;
-    right: 30%;
-    font-family: 'Poppins', sans-serif;
-}
-.search {
-    font-family: 'Poppins', sans-serif;
-    width: 25px;
-    height: 25px;
-}
+        .logo {
+            width: 290px;
+            height: 43px;
+            padding-top: 10px;
+        } 
+    }
 
-.shoppingbag {
-    width: 25px;
-    height: 30px;
-}
+    .thirdnavpart {
 
-.favorites {
-    width: 30px;
-    height: 30px;
-    padding-left: 60px;
-    padding-right: 60px; 
-}
+        .search {
+            font-family: 'Poppins', sans-serif;
+            width: 25px;
+            height: 25px;
+        }
+    }
 
-.user {
-    width: 25px;
-    height: 30px;
+    .fourthnavpart {
+
+        .shoppingbag {
+            width: 25px;
+            height: 30px;
+        }
+        
+        .favorites {
+            width: 30px;
+            height: 30px;
+            padding-left: 60px;
+            padding-right: 60px; 
+        }
+        
+        .user {
+            width: 25px;
+            height: 30px;
+        }
+    }
 }
 
 #wrapper {
@@ -164,65 +167,127 @@ ul li:last-of-type {
   padding-bottom: 0;
 }
 
-
-main {
-    background-color: blue;
-}
 // Here starts Contact form
-.leftside { // Style around each input
+
+.formintro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+}
+.column {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.leftside { // Style for name and email. 
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     .userinfo { // Style on text field
-        width: 300px;
-        height: 30px;
+        width: 400px;
+        height: 40px;
         padding: 10px;
+        margin: 15px;
+        font-size: 18px;
+        margin-right: 35px;
+
     }
 }
 
-.number { // For phone and country number 
+.number { // Style for phone and country number 
     padding: 10px;
 
     .countrynumber {
-        width: 45px;
+        width: 60px;
         height: 30px;
         padding: 10px;
         margin: 5px;
+        font-size: 18px;
     }
 
     .phonenumber {
-        width: 213px;
+        width: 300px;
         height: 30px;
         padding: 10px;
         margin: 5px;
+        font-size: 18px;
+        margin-right: 30px;
     }
 }
 
-.contactmessage { // Text box
-    padding: 10px;
+.rightside {
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-    textarea {
-        font-family: 'Poppins', sans-serif;
-    }
-
-    .sendmessage {
-        left: 125px;
-        width: 155px;
-        height: 40px;
-        font-size: 16px;
-        border: none;
-        color: white;
-        background: rgba(146, 107, 90, 0.63);
-        border-radius: 4%;
-        font-family: 'Raleway', sans-serif;
-
-        .sendmessage:hover {
-            background:rgba(146, 107, 90, 1);
+    .contactmessage { // Text box
+        padding: 5px;
+    
+        textarea {
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            width: 380px;
+            height: 200px;
+        }
+    
+        .choosefile {
+            font-size: 18px;
+            font-family: 'Poppins', sans-serif;
+        }
+    
+        .sendmessage { // Button to send message
+            width: 170px;
+            height: 50px;
+            margin-top: 12px;
+            font-size: 16px;
+            border: none;
+            color: white;
+            background: rgba(146, 107, 90, 0.63);
+            border-radius: 4%;
+            font-family: 'Poppins', sans-serif;
         }
     }
+}
 
+.OrCall {
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+
+    a {
+        font-family: 'Poppins', sans-serif;
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+
+    .adress {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    .office {
+        display: flex;
+        flex-direction: row;
+        width: 50px;
+        height: 50px;
+    }
 }
 
 .footerSP {
@@ -237,7 +302,7 @@ main {
     
     .minilogo {
         width: 200px;
-        height: 40px;
+        height: 30px;
     }
 
     .underside {
