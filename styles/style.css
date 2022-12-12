@@ -2,7 +2,6 @@ body {
   max-width: 100%;
   height: auto;
   margin: 0%;
-  background: rgb(249, 249, 249);
 }
 
 .header {
@@ -23,9 +22,9 @@ body {
   text-align: center;
   padding: 12px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 12px;
   font-family: "Poppins", sans-serif;
-  padding-right: 30px;
+  padding-right: 5px;
 }
 
 .header-left {
@@ -35,17 +34,21 @@ body {
 }
 
 .searchicon {
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   padding-right: 10px;
 }
 
+.searchbar {
+  width: 68px;
+}
+
 .header-right {
-  float: right;
+  float: left;
 }
 .header-right .icons {
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
 }
 
 main {
@@ -57,7 +60,7 @@ main {
 
 .textwrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-top: 150px;
@@ -65,27 +68,28 @@ main {
 .textwrapper .textposition {
   flex-direction: column;
   background: rgba(255, 255, 255, 0.708);
-  width: 800px;
+  width: 350px;
   border-radius: 4px;
+  margin-bottom: 20px;
 }
 .textwrapper .smellaway {
-  padding-left: 10%;
+  padding-left: 5%;
 }
 .textwrapper h1 {
   text-align: center;
   font-family: "Nanum Myeongjo", serif;
-  font-size: 50px;
+  font-size: 30px;
 }
 .textwrapper .pitch {
   text-align: center;
-  font-size: 24px;
+  font-size: 16px;
   font-family: "Raleway", sans-serif;
   padding-bottom: 30px;
 }
 .textwrapper .StartBtn {
-  width: 200px;
-  height: 90px;
-  font-size: 22px;
+  width: 100px;
+  height: 30px;
+  font-size: 12px;
   border: none;
   background: rgb(186, 162, 151);
   color: black;
@@ -101,32 +105,34 @@ main {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  padding-top: 120px;
+  padding-top: 280px;
 }
 .reviews .eachreview {
-  width: 300px;
-  height: 150px;
+  width: 80px;
+  height: 50px;
 }
 .reviews .morereviews {
   color: black;
   font-family: "Poppins", sans-serif;
-  font-size: 14px;
+  font-size: 8px;
 }
 
 footer {
+  width: 100%;
   background: rgba(146, 107, 90, 0.63);
   font-family: "Poppins", sans-serif;
-  font-size: 18px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  padding: 30px;
 }
 footer .minilogo {
-  width: 200px;
-  height: 30px;
-  padding: 20px;
+  width: 100px;
+  height: 15px;
+  padding-right: 20px;
+}
+footer .copyright {
+  font-size: 8px;
 }
 footer .underside {
   display: flex;
@@ -134,101 +140,95 @@ footer .underside {
   text-decoration: none;
   color: black;
   font-family: "Poppins", sans-serif;
-  font-size: 18px;
+  font-size: 10px;
 }
 
-@media screen and (max-width: 860px) {
+@media (min-width: 860px) {
+  .header .logo {
+    width: 200px;
+    height: 30px;
+  }
   .header-right {
-    float: left;
+    float: right;
   }
   .header-right .icons {
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
   }
   .header a {
-    font-size: 12px;
-    padding: 5px;
-  }
-  .minilogo {
-    display: flex;
-    flex-direction: row;
+    font-size: 18px;
+    padding: 30px;
   }
   .searchicon {
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
   }
   .searchbar {
-    width: 80px;
+    width: 200px;
   }
   .textwrapper {
-    flex-direction: column;
+    flex-direction: row;
   }
   .textwrapper .textposition {
-    width: 350px;
+    width: 800px;
     border-radius: 4px;
   }
   .textwrapper .smellaway {
-    padding: 5%;
+    padding: 10%;
   }
   .textwrapper h1 {
-    font-size: 30px;
+    font-size: 50px;
   }
   .textwrapper .pitch {
-    font-size: 16px;
+    font-size: 24px;
   }
   .textwrapper .StartBtn {
-    width: 150px;
-    height: 60px;
-    font-size: 12px;
+    width: 200px;
+    height: 90px;
+    font-size: 22px;
   }
   .textwrapper .reviews {
-    padding-top: 150px;
-    padding-bottom: 50px;
+    padding-top: 120px;
   }
   .textwrapper .reviews .eachreview {
-    width: 100px;
-    height: 50px;
+    width: 300px;
+    height: 150px;
   }
   .textwrapper .reviews .morereviews {
-    font-size: 8px;
+    font-size: 14px;
   }
   .textwrapper footer {
-    width: 100%;
+    font-size: 18px;
+    padding: 30px;
   }
   .textwrapper footer .minilogo {
-    width: 100px;
-    height: 15px;
-    padding-right: 20px;
-  }
-  .textwrapper footer .copyright {
-    font-size: 8px;
+    width: 200px;
+    height: 30px;
+    padding: 20px;
   }
   .textwrapper footer .underside {
-    font-size: 12px;
+    font-size: 18px;
   }
   .reviews {
-    justify-content: space-evenly;
-    padding-top: 250px;
+    padding-top: 100px;
   }
   .reviews .eachreview {
-    width: 80px;
-    height: 40px;
+    width: 300px;
+    height: 120px;
   }
   .reviews .morereviews {
-    color: black;
-    font-family: "Poppins", sans-serif;
-    font-size: 7px;
+    font-size: 20px;
   }
   footer .minilogo {
-    width: 90px;
-    height: 10px;
+    width: 200px;
+    height: 30px;
     padding-right: 20px;
   }
   footer .copyright {
-    font-size: 8px;
+    font-size: 12px;
   }
   footer .underside {
-    font-size: 14px;
+    font-size: 18px;
     padding-right: 20px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -2,8 +2,6 @@ body {
     max-width: 100%;
     height: auto;
     margin: 0%;
-    background: rgba(249, 249, 249, 1);
-
 }
 
 // NAVBAR
@@ -25,9 +23,9 @@ body {
     text-align: center;
     padding: 12px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 12px;
     font-family: 'Poppins', sans-serif;
-    padding-right: 30px;
+    padding-right: 5px;
   }
   
   .header-left {
@@ -37,23 +35,25 @@ body {
   }
   
   .searchicon {
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     padding-right: 10px;
   }
 
+  .searchbar {
+    width: 68px;
+}
   .header-right {
-    float: right;
+    float: left;
 
     .icons {
-        width: 20px;
-        height: 20px;
+        width: 10px;
+        height: 10px;
     }
   }
 
 
 main {
-
     height: 100vh;
     background-image: url(/album/startpagebg.svg);
     background-position: top;
@@ -62,7 +62,7 @@ main {
 
   .textwrapper {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 150px;
@@ -70,32 +70,33 @@ main {
     .textposition {
         flex-direction: column;
         background: rgba(255, 255, 255, 0.708);
-        width: 800px;
+        width: 350px;
         border-radius: 4px;
+        margin-bottom: 20px;
     }
 
     .smellaway {
-        padding-left: 10%;
+        padding-left: 5%;
     }
 
     h1 {
         text-align: center;
         font-family: 'Nanum Myeongjo', serif;
-        font-size: 50px;
+        font-size: 30px;
     }
 
     .pitch {
         text-align: center;
-        font-size: 24px;
+        font-size: 16px;
         font-family: 'Raleway', sans-serif;
         padding-bottom: 30px;
         
     }
 
     .StartBtn {
-        width: 200px;
-        height: 90px;
-        font-size: 22px;
+        width: 100px;
+        height: 30px;
+        font-size: 12px;
         border: none;
         background: rgba(186, 162, 151, 1);
         color: black;
@@ -113,206 +114,165 @@ main {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    padding-top: 120px;
+    padding-top: 280px;
      
     .eachreview {
-        width: 300px;
-        height: 150px;
+        width: 80px;
+        height: 50px;
     }
 
     .morereviews {
         color: black;
         font-family: 'Poppins', sans-serif;
-        font-size: 14px;
+        font-size: 8px;
     }
 }
 
 footer {
+    width: 100%;
     background: rgba(146, 107, 90, 0.63);
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
-    padding: 30px; 
+    align-items: center; 
    
     
     .minilogo {
-        width: 200px;
-        height: 30px;
-        padding: 20px;
+        width: 100px;
+        height: 15px;
+        padding-right: 20px;
     }
     
+    .copyright {
+        font-size: 8px;
+    }
     .underside {
         display: flex;
         flex-direction: column;
         text-decoration: none;
         color: black ;
         font-family: 'Poppins', sans-serif;
-        font-size: 18px;
+        font-size: 10px;
     }
 }
 
-@media screen and (max-width: 860px) {
+@media (min-width: 860px) {
+
+    .header {
+        .logo {
+            width: 200px;
+            height: 30px;
+        }
+    }
 
     .header-right {
-        float: left;
+        float: right;
         .icons {
-            width: 10px;
-            height: 10px;
+            width: 20px;
+            height: 20px;
         }
       }
 
     .header a {
-        font-size: 12px;
-        padding: 5px;
-    }
-
-    .minilogo {
-        display: flex;
-        flex-direction: row;
-
+        font-size: 18px;
+        padding: 30px;
     }
 
     .searchicon {
-        width: 10px;
-        height: 10px;
+        width: 20px;
+        height: 20px;
       }
     .searchbar {
-        width: 80px;
+        width: 200px;
     }
 
     .textwrapper {
-        flex-direction: column;
+        flex-direction: row;
 
     
         .textposition {
-            width: 350px;
+            width: 800px;
             border-radius: 4px;
         }
     
         .smellaway {
-            padding: 5%;
+            padding: 10%;
         }
     
         h1 {
-            font-size: 30px;
+            font-size: 50px;
         }
     
         .pitch {
-            font-size: 16px;
+            font-size: 24px;
         }
     
         .StartBtn {
-            width: 150px;
-            height: 60px;
-            font-size: 12px;
+            width: 200px;
+            height: 90px;
+            font-size: 22px;
         }
     
-    // .textposition {
-    //     position: relative;
-    //   }
-    
-    //   .textwrapper {
-    //     display: flex;
-    //     flex-direction: column;
-    //     justify-content: center;
-    //     align-items: center;
-    //     position: absolute;
-    //     top: 30%;
-    //     left: 35%;
-    
-    //     h1 {
-    //         text-align: center;
-    //         font-family: 'Nanum Myeongjo', serif;
-    //         font-size: 24px;
-    //     }
-    
-    //     .pitch {
-    //         text-align: center;
-    //         font-size: 12px;
-    //         font-family: 'Raleway', sans-serif;
-    //     }
-    
-    //     .StartBtn {
-    //         width: 100px;
-    //         height: 30px;
-    //         font-size: 10px;
-    //         border: none;
-    //         background: rgba(146, 107, 90, 0.63);
-    //         color: white;
-    //         border-radius: 4%;
-    //         font-family: 'Raleway', sans-serif;
-    //     }
-    // }
-    
     .reviews {   
-        padding-top:150px;
-        padding-bottom: 50px;
+        padding-top:120px;
 
         .eachreview {
-            width: 100px;
-            height: 50px;
+            width: 300px;
+            height: 150px;
         }
     
         .morereviews {
-            font-size: 8px;
+            font-size: 14px;
         }
     }
 
 
     footer {
-        width: 100%;
+        font-size: 18px;
+        padding: 30px;
         
         .minilogo {
-            width: 100px;
-            height: 15px;
-            padding-right: 20px;
-        }
-
-        .copyright {
-            font-size: 8px;
+            width: 200px;
+            height: 30px;
+            padding: 20px;
         }
 
         .underside {
-            font-size: 12px;
+            font-size: 18px;
         }
     }
 
     }
 
     .reviews {
-        justify-content: space-evenly;
-        padding-top: 250px;
+        padding-top: 100px;
          
         .eachreview {
-            width: 80px;
-            height: 40px;
+            width: 300px;
+            height: 120px;
         }
     
         .morereviews {
-            color: black;
-            font-family: 'Poppins', sans-serif;
-            font-size: 7px;
+            font-size: 20px;
         }
     }
 
     footer {  
         
         .minilogo {
-            width: 90px;
-            height: 10px;
+            width: 200px;
+            height: 30px;
             padding-right: 20px;
         }
 
         .copyright {
-            font-size: 8px;
+            font-size: 12px;
         }
         
         .underside {
-            font-size: 14px;
-            padding-right: 20px;
+            font-size: 18px;
+            padding-right:20px;
         }
     }
 }
