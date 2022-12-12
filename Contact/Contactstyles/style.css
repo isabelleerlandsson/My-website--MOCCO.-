@@ -4,58 +4,48 @@ body {
   margin: 0%;
 }
 
-.wholenavbar {
+.header {
+  overflow: hidden;
   background: white;
   width: 100%;
-  height: 100px;
   border-bottom: 5px solid #926B5A;
+  padding: 20px 10px;
+}
+.header .logo {
+  width: 100px;
+  height: 15px;
+}
+
+/* Style on links */
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  padding-right: 30px;
+}
+
+.header-left {
+  float: left;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
   align-items: center;
 }
-.wholenavbar .firstnavpart .AboutUs {
-  text-decoration: none;
-  color: black;
-  font-family: "Poppins", sans-serif;
-  font-size: 18px;
+
+.searchicon {
+  width: 20px;
+  height: 20px;
+  padding-right: 10px;
 }
-.wholenavbar .firstnavpart .Products {
-  text-decoration: none;
-  padding: 30px;
-  color: black;
-  font-family: "Poppins", sans-serif;
-  font-size: 18px;
+
+.header-right {
+  float: right;
 }
-.wholenavbar .firstnavpart .Contact {
-  text-decoration: none;
-  color: black;
-  font-family: "Poppins", sans-serif;
-  font-size: 18px;
-}
-.wholenavbar .secondnavpart .logo {
-  width: 290px;
-  height: 43px;
-  padding-top: 10px;
-}
-.wholenavbar .thirdnavpart .search {
-  font-family: "Poppins", sans-serif;
-  width: 25px;
-  height: 25px;
-}
-.wholenavbar .fourthnavpart .shoppingbag {
-  width: 25px;
-  height: 30px;
-}
-.wholenavbar .fourthnavpart .favorites {
-  width: 30px;
-  height: 30px;
-  padding-left: 60px;
-  padding-right: 60px;
-}
-.wholenavbar .fourthnavpart .user {
-  width: 25px;
-  height: 30px;
+.header-right .icons {
+  width: 20px;
+  height: 20px;
 }
 
 #wrapper {
@@ -283,4 +273,56 @@ ul li:last-of-type {
   color: black;
   font-family: "Poppins", sans-serif;
   font-size: 18px;
+}
+
+@media screen and (max-width: 500px) {
+  #wrapper {
+    max-width: 400px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .formintro {
+    font-size: 20px;
+    text-align: center;
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
+  .leftside .userinfo {
+    width: 200px;
+    height: 20px;
+    font-size: 12px;
+  }
+  .number .countrynumber {
+    width: 25px;
+    height: 10px;
+    font-size: 12px;
+  }
+  .number .phonenumber {
+    width: 132px;
+    height: 10px;
+    font-size: 12px;
+  }
+  .rightside .contactmessage textarea {
+    font-size: 12px;
+    width: 280px;
+    height: 200px;
+  }
+  .rightside .contactmessage .choosefile {
+    font-size: 12px;
+  }
+  .rightside .contactmessage .sendmessage {
+    width: 140px;
+    height: 40px;
+    margin-top: 12px;
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -82,37 +82,49 @@ body {
     }
 }
 
-.products {
+.allitems {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 40px;
-}
 
-.separatefirstrow {
-    background: white;
-    min-width: 400px;
-    height: 550px;
-    margin: 10px;  
-    box-shadow: 0 4px 8px 0 rgba(146, 107, 90, 0.5), 0 6px 20px 0 rgba(146, 107, 90, 0.3);
-    position: relative;
-
-    .itemimg {
+    .cards { // Style for whole card
         width: 400px;
-        height: 400px;
+        height: 580px;
+        background: white;
+        box-shadow: 0 4px 8px 0 rgba(146, 107, 90, 0.5), 0 6px 20px 0 rgba(146, 107, 90, 0.3);
+        margin: 40px;
+
+        .eachitem { // Size of images
+            width: 400px;
+            height: 400px;
+        }
     }
-    h2 {
+
+    .wrappa {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .firstrow { 
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .secondrow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
         font-family: 'Raleway', sans-serif;
-        font-size: 28px;
     }
 
     .basketBtn {
-        position: absolute;
-        left: 125px;
         width: 155px;
         height: 40px;
         font-size: 16px;
@@ -124,82 +136,13 @@ body {
     }
 
     .basketBtn:hover {
-        background: #926B5A;
-    }
-    
-    .favorites {
-        position: absolute;
-        left: 290px;
-        bottom: 20px;
-        width: 30px;
-        height: 30px;
-        padding-left: 60px;
-        padding-right: 60px; 
+        background-color: rgba(146, 107, 90, 1);
     }
 
     p {
-        position: absolute;
-        left: 15px;
-        bottom: 3px;
-        font-family:'Raleway', sans-serif;
-        font-size: 25px;
-    }
-}
-
-.separatesecondrow {
-    background: white;
-    width: 400px;
-    height: 550px;
-    margin: 10px;  
-    box-shadow: 0 4px 8px 0 rgba(146, 107, 90, 0.5), 0 6px 20px 0 rgba(146, 107, 90, 0.3); 
-    position: relative;
-
-    .itemimg {
-        width: 400px;
-        height: 400px;
-    }
-
-    h2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Raleway', sans-serif;
-        font-size: 28px;
-    }
-
-    .basketBtn {
-        position: absolute;
-        left: 125px;
-        width: 155px;
-        height: 40px;
-        font-size: 16px;
-        border: none;
-        background: rgba(146, 107, 90, 0.63);
-        color: white;
-        border-radius: 4%;
-        font-family: 'Raleway', sans-serif;
-    }
-
-    .basketBtn:hover {
-        background: #926B5A;
-    }
-    
-    .favorites {
-        position: absolute;
-        left: 290px;
-        bottom: 20px;
-        width: 30px;
-        height: 30px;
-        padding-left: 60px;            
-        padding-right: 60px; 
-    }
-
-    p {
-        position: absolute;
-        left: 15px;
-        bottom: 3px;
-        font-family:'Raleway', sans-serif;
-        font-size: 25px;
+        padding-left: 20px;
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
     }
 }
 
