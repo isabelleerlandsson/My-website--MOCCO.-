@@ -5,122 +5,95 @@ body {
   background: rgb(249, 249, 249);
 }
 
-.wholenavbar {
+.header {
+  overflow: hidden;
   background: white;
-  width: 100%;
-  height: 100px;
   border-bottom: 5px solid #926B5A;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  padding: 20px 10px;
 }
-.wholenavbar .firstnavpart .AboutUs {
-  text-decoration: none;
-  color: black;
-  font-family: "Poppins", sans-serif;
-  font-size: 18px;
-}
-.wholenavbar .firstnavpart .Products {
-  text-decoration: none;
-  padding: 30px;
-  color: black;
-  font-family: "Poppins", sans-serif;
-  font-size: 18px;
-}
-.wholenavbar .firstnavpart .Contact {
-  text-decoration: none;
-  color: black;
-  font-family: "Poppins", sans-serif;
-  font-size: 18px;
-}
-.wholenavbar .secondnavpart .logo {
-  width: 290px;
-  height: 43px;
-  padding-top: 10px;
-}
-.wholenavbar .thirdnavpart .search {
-  font-family: "Poppins", sans-serif;
-  width: 25px;
-  height: 25px;
-}
-.wholenavbar .fourthnavpart .shoppingbag {
-  width: 25px;
-  height: 30px;
-}
-.wholenavbar .fourthnavpart .favorites {
-  width: 30px;
-  height: 30px;
-  padding-left: 60px;
-  padding-right: 60px;
-}
-.wholenavbar .fourthnavpart .user {
-  width: 25px;
-  height: 30px;
+.header .logo {
+  width: 100px;
+  height: 15px;
 }
 
-.wholemain {
-  width: 100%;
-  height: 40rem;
-  position: relative;
-}
-.wholemain .backgroundimg {
-  width: 100%;
-}
-.wholemain .slogan {
-  position: absolute;
-  top: 30%;
-  left: 56%;
-  width: 600px;
-  background: blueviolet;
+/* Style on links */
+.header a {
+  float: left;
   color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  padding-right: 30px;
 }
-.wholemain h1 {
+
+.header-left {
+  float: left;
+  display: flex;
+  align-items: center;
+}
+
+.searchicon {
+  width: 20px;
+  height: 20px;
+  padding-right: 10px;
+}
+
+.header-right {
+  float: right;
+}
+.header-right .icons {
+  width: 20px;
+  height: 20px;
+}
+
+main {
+  height: 100vh;
+  background-image: url(/album/startpagebg.svg);
+  background-position: top;
+  background-size: cover;
+}
+
+.textwrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 150px;
+}
+.textwrapper .textposition {
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.708);
+  width: 800px;
+  border-radius: 4px;
+}
+.textwrapper .smellaway {
+  padding-left: 10%;
+}
+.textwrapper h1 {
   text-align: center;
   font-family: "Nanum Myeongjo", serif;
-  position: absolute;
-  font-size: 3.5rem;
-  color: red;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  font-size: 50px;
 }
-.wholemain .pitch {
+.textwrapper .pitch {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 24px;
   font-family: "Raleway", sans-serif;
-  position: absolute;
-  top: 80%;
-  transform: translate(-50%, -50%);
+  padding-bottom: 30px;
 }
-.wholemain .StartBtn {
-  position: absolute;
-  top: 100%;
-  left: 37%;
-  width: 155px;
-  height: 60px;
-  font-size: 18px;
+.textwrapper .StartBtn {
+  width: 200px;
+  height: 90px;
+  font-size: 22px;
   border: none;
-  background: rgba(146, 107, 90, 0.63);
-  color: white;
+  background: rgb(186, 162, 151);
+  color: black;
   border-radius: 4%;
   font-family: "Raleway", sans-serif;
 }
-
-.reference {
-  background: blue;
-  width: 30%;
-  height: 20%;
-  padding: 20px;
-  position: absolute;
-  top: 120%;
-  left: 57%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.reference .star {
-  width: 30px;
-  height: 30px;
-  padding-left: 20px;
+.textwrapper .StartBtn:hover {
+  background: #926B5A;
 }
 
 .reviews {
@@ -128,6 +101,7 @@ body {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  padding-top: 120px;
 }
 .reviews .eachreview {
   width: 300px;
@@ -136,10 +110,10 @@ body {
 .reviews .morereviews {
   color: black;
   font-family: "Poppins", sans-serif;
-  font-size: 18px;
+  font-size: 14px;
 }
 
-.footerSP {
+footer {
   background: rgba(146, 107, 90, 0.63);
   font-family: "Poppins", sans-serif;
   font-size: 18px;
@@ -149,16 +123,112 @@ body {
   align-items: center;
   padding: 30px;
 }
-.footerSP .minilogo {
+footer .minilogo {
   width: 200px;
   height: 30px;
   padding: 20px;
 }
-.footerSP .underside {
+footer .underside {
   display: flex;
   flex-direction: column;
   text-decoration: none;
   color: black;
   font-family: "Poppins", sans-serif;
   font-size: 18px;
+}
+
+@media screen and (max-width: 860px) {
+  .header-right {
+    float: left;
+  }
+  .header-right .icons {
+    width: 10px;
+    height: 10px;
+  }
+  .header a {
+    font-size: 12px;
+    padding: 5px;
+  }
+  .minilogo {
+    display: flex;
+    flex-direction: row;
+  }
+  .searchicon {
+    width: 10px;
+    height: 10px;
+  }
+  .searchbar {
+    width: 80px;
+  }
+  .textwrapper {
+    flex-direction: column;
+  }
+  .textwrapper .textposition {
+    width: 350px;
+    border-radius: 4px;
+  }
+  .textwrapper .smellaway {
+    padding: 5%;
+  }
+  .textwrapper h1 {
+    font-size: 30px;
+  }
+  .textwrapper .pitch {
+    font-size: 16px;
+  }
+  .textwrapper .StartBtn {
+    width: 150px;
+    height: 60px;
+    font-size: 12px;
+  }
+  .textwrapper .reviews {
+    padding-top: 150px;
+    padding-bottom: 50px;
+  }
+  .textwrapper .reviews .eachreview {
+    width: 100px;
+    height: 50px;
+  }
+  .textwrapper .reviews .morereviews {
+    font-size: 8px;
+  }
+  .textwrapper footer {
+    width: 100%;
+  }
+  .textwrapper footer .minilogo {
+    width: 100px;
+    height: 15px;
+    padding-right: 20px;
+  }
+  .textwrapper footer .copyright {
+    font-size: 8px;
+  }
+  .textwrapper footer .underside {
+    font-size: 12px;
+  }
+  .reviews {
+    justify-content: space-evenly;
+    padding-top: 250px;
+  }
+  .reviews .eachreview {
+    width: 80px;
+    height: 40px;
+  }
+  .reviews .morereviews {
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-size: 7px;
+  }
+  footer .minilogo {
+    width: 90px;
+    height: 10px;
+    padding-right: 20px;
+  }
+  footer .copyright {
+    font-size: 8px;
+  }
+  footer .underside {
+    font-size: 14px;
+    padding-right: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */

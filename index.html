@@ -10,70 +10,72 @@
 </head>
 <body>
     
-    <!--Navbar-->
-    <nav>
+         <!--Navbar-->
+         <header class="header">
+       
+            <nav>
+            <section class="firstsection">
+                <div class="minilogo">
+                <a href="index.html"> <img class="logo" src="/logo/logo..png" alt="Företagets logga. Det står i text Mocco."></a>
+                </div>
+                <div class="header-left">
+                    <a href="../AboutUs/index.html">Om oss</a>
+                    <a href="../Contact/index.html">Kontakt</a>
+                    <a href="/Products/index.html">Produkter</a>
 
-    <div class="wholenavbar">
-        <div class="firstnavpart">
-            <a class="AboutUs" href="AboutUs/index.html">Om Oss</a>
-            <a class="Products" href="Products/index.html">Produkter</a>
-            <a class="Contact" href="Contact/index.html">Kontakt</a> 
-        </div>
-
-        <div class="secondnavpart">
-            <div>
-                <a href="index.html"><img class="logo" src="/logo/logo..png" alt="Företagets logga som heter Mocco."></a>
-            </div>
-        </div>
-
-        <div class="thirdnavpart">
-                <img src="icons/Search.png" alt="Förstoringsglas" class="search">
-                <label for="">Sök...</label>
-        </div>
-
-        <div class="fourthnavpart">
-                <a href="#"><img src="icons/user.png" alt="Bild på en användarikon" class="user"></a>
-                <a href="#"><img src="icons/favorite.png" alt="Bild på ett hjärta" class="favorites"></a>
-                <a href="#"><img src="icons/shoppingbag.png" alt="Bild på en kasse" class="shoppingbag"></a>
-        </div>
-        </div>
-    </nav>
-
+                    <img class="searchicon" src="/icons/Search.png" alt="Bild på ett förstoringsglas">
+                    <input type="search" name="search" class="searchbar">
+                </div>
+    
+            </section>
+    
+            <section>
+                <div class="header-right">
+                        <a href="#"><img src="../icons/user.png" alt="Bild på en användarikon" class="icons"></a>
+                        <a href="#"><img src="../icons/favorite.png" alt="Bild på ett hjärta" class="icons"></a>
+                        <a href="#"><img src="../icons/shoppingbag.png" alt="Bild på en kasse" class="icons"></a>
+                </div>
+            </section>
+            </nav>
+    
+        </header> 
+        
     <main>
-        <section>
-        <article class="wholemain">
 
-            <div class="slogan">
+        <!-- <img src="/album/startpagebg.png" class="startpagebg" alt="Bakgrundsbild med olika frukter"> -->
+        <section>
+    
+            <article class="textwrapper">
+                <div class="textposition">
                 <h1>At mocco you can <br> go locco</h1>
+               
                 <p class="pitch">Har du svårt att hitta den där sista <br> touchen i hemmet? <br>
                     Hos oss på Mocco kan du hitta den sista <br> pusselbiten med våra stilfulla ljus, <br> fantastiska tvålar och underbara <br> doftstickor.</p>
+                </div>
+
+                <div class="smellaway">
                 <a href="/Products/index.html"><button class="StartBtn">Dofta dig vidare</button></a>
+                </div>
+            </article>  
             </div>
-
-            <img class="backgroundimg" src="album/startpagebg.png" alt="Bakgrundsbild med olika frukter">
-        </article>
-
-        <article>
-            <div class="reviews">
-
+        <article class="reviews">
                 <div>
-                    <img class="eachreview" src="/album/review1.png" alt="">
+                    <img class="eachreview" src="/album/reviewone.svg" alt="Omdöme från kunder med antal stjärnor, namn och en kommentar">
                 </div>
 
                 <div>
-                    <img class="eachreview" src="/album/review2.png" alt="">
+                    <img class="eachreview" src="/album/reviewtwo.svg" alt="Omdöme från kunder med antal stjärnor, namn och en kommentar">
                 </div>
-
+            
                 <div>
-                    <img class="eachreview" src="/album/review3.png" alt="">
+                    <img class="eachreview" src="/album/reviewthree.svg" alt="Omdöme från kunder med antal stjärnor, namn och en kommentar">
                 </div>
-
+            
                 <div>
-                    <img class="eachreview" src="/album/review4.png" alt="">
+                    <img class="eachreview" src="/album/reviewfour.svg" alt="Omdöme från kunder med antal stjärnor, namn och en kommentar">
                 </div>
-
+            
                 <a class="morereviews" href="/Refrences/index.html">Fler recensioner</a>
-            </div>
         </article>
         </section>
         
@@ -92,7 +94,7 @@
         </div>
     </div>
 
-        <p>© Copyright by MOCCO. 2022 </p>
+        <p class="copyright">© Copyright by MOCCO. 2022 </p>
     </footer>
 
 </body>

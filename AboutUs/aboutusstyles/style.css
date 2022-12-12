@@ -4,52 +4,48 @@ body {
   margin: 0%;
 }
 
-.wholenavbar {
+.header {
+  overflow: hidden;
   background: white;
   width: 100%;
-  height: 100px;
   border-bottom: 5px solid #926B5A;
+  padding: 20px 10px;
+}
+.header .logo {
+  width: 100px;
+  height: 15px;
+}
+
+/* Style on links */
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  padding-right: 30px;
+}
+
+.header-left {
+  float: left;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
   align-items: center;
 }
-.wholenavbar .firstnavpart .Products {
-  text-decoration: none;
-  padding: 30px;
-  color: black;
-  font-family: "Poppins", sans-serif;
-  font-size: 18px;
+
+.searchicon {
+  width: 20px;
+  height: 20px;
+  padding-right: 10px;
 }
-.wholenavbar .firstnavpart .Contact {
-  text-decoration: none;
-  color: black;
-  font-family: "Poppins", sans-serif;
-  font-size: 18px;
+
+.header-right {
+  float: right;
 }
-.wholenavbar .secondnavpart .logo {
-  width: 290px;
-  height: 43px;
-  padding-top: 10px;
-}
-.wholenavbar .thirdnavpart .search {
-  font-family: "Poppins", sans-serif;
-  width: 25px;
-  height: 25px;
-}
-.wholenavbar .fourthnavpart .shoppingbag {
-  width: 25px;
-  height: 30px;
-}
-.wholenavbar .fourthnavpart .favorites {
-  width: 30px;
-  height: 30px;
-  padding-left: 60px;
-  padding-right: 60px;
-}
-.wholenavbar .fourthnavpart .user {
-  width: 25px;
-  height: 30px;
+.header-right .icons {
+  width: 20px;
+  height: 20px;
 }
 
 .wholeaboutus {
@@ -83,7 +79,7 @@ body {
   font-size: 18px;
 }
 
-.backgroundimg {
+.employeesection {
   background: rgb(249, 249, 249);
   font-family: "Raleway", sans-serif;
   display: flex;
@@ -91,7 +87,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.backgroundimg h2 {
+.employeesection h2 {
   font-size: 40px;
 }
 
@@ -115,6 +111,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding-bottom: 20px;
 }
 .employees .employee h3 {
   font-size: 24px;
@@ -150,4 +147,77 @@ body {
   color: black;
   font-family: "Poppins", sans-serif;
   font-size: 18px;
+}
+
+@media screen and (max-width: 500px) {
+  .header-right {
+    float: left;
+  }
+  .header-right .icons {
+    width: 10px;
+    height: 10px;
+  }
+  .header a {
+    font-size: 12px;
+    padding: 5px;
+  }
+  .minilogo {
+    display: flex;
+    flex-direction: row;
+  }
+  .searchicon {
+    width: 10px;
+    height: 10px;
+  }
+  .searchbar {
+    width: 80px;
+  }
+  .wholeaboutus .frame {
+    width: 300px;
+    height: 200px;
+    top: 100px;
+    left: 50px;
+  }
+  .wholeaboutus .frame .aboutusdetails h1 {
+    font-size: 12px;
+  }
+  .wholeaboutus .frame .aboutusdetails p {
+    font-size: 8px;
+    width: 280px;
+  }
+  .employeesection h2 {
+    font-size: 24px;
+  }
+  .employees {
+    flex-direction: column;
+  }
+  .employees .employephoto {
+    width: 100px;
+    padding: 10px;
+    margin: 20px;
+  }
+  .employees .employee h3 {
+    font-size: 14px;
+  }
+  .employees .employee h4 {
+    font-size: 12px;
+  }
+  .employees .employee p {
+    width: 200px;
+    font-size: 12px;
+  }
+  .employees .employee a {
+    font-size: 10px;
+  }
+  .footerSP .minilogo {
+    width: 100px;
+    height: 15px;
+    padding-right: 20px;
+  }
+  .footerSP .copyright {
+    font-size: 12px;
+  }
+  .footerSP .underside {
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=style.css.map */

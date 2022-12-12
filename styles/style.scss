@@ -6,152 +6,105 @@ body {
 
 }
 
-.wholenavbar {
+// NAVBAR
+.header {
+    overflow: hidden;
     background: white;
-    width: 100%;
-    height: 100px;
     border-bottom: 5px solid #926B5A; 
+    padding: 20px 10px;
+
+    .logo {
+        width: 100px;
+        height: 15px;
+    }
+  }
+  /* Style on links */
+  .header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    padding-right: 30px;
+  }
+  
+  .header-left {
+    float: left;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     align-items: center;
+  }
+  
+  .searchicon {
+    width: 20px;
+    height: 20px;
+    padding-right: 10px;
+  }
 
-    .firstnavpart {
+  .header-right {
+    float: right;
 
-        .AboutUs {
-            text-decoration: none;
-            color: black ;
-            font-family: 'Poppins', sans-serif;
-            font-size: 18px;
-        }
-
-        .Products {
-            text-decoration: none;
-            padding: 30px;
-            color: black ;
-            font-family: 'Poppins', sans-serif;
-            font-size: 18px;
-        }
-        
-        .Contact {
-            text-decoration: none;
-            color: black ;
-            font-family: 'Poppins', sans-serif;
-            font-size: 18px;
-        }
+    .icons {
+        width: 20px;
+        height: 20px;
     }
+  }
 
-    .secondnavpart {
 
-        .logo {
-            width: 290px;
-            height: 43px;
-            padding-top: 10px;
-        } 
-    }
+main {
 
-    .thirdnavpart {
-
-        .search {
-            font-family: 'Poppins', sans-serif;
-            width: 25px;
-            height: 25px;
-        }
-    }
-
-    .fourthnavpart {
-
-        .shoppingbag {
-            width: 25px;
-            height: 30px;
-        }
-        
-        .favorites {
-            width: 30px;
-            height: 30px;
-            padding-left: 60px;
-            padding-right: 60px; 
-        }
-        
-        .user {
-            width: 25px;
-            height: 30px;
-        }
-    }
+    height: 100vh;
+    background-image: url(/album/startpagebg.svg);
+    background-position: top;
+    background-size: cover;
 }
 
-.wholemain {
-    width:100%;
-    height:40rem;
-    position:relative;
+  .textwrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
 
-    .backgroundimg {
-        width: 100%;
+    .textposition {
+        flex-direction: column;
+        background: rgba(255, 255, 255, 0.708);
+        width: 800px;
+        border-radius: 4px;
     }
 
-    .slogan {
-        position: absolute;
-        top: 30%;
-        left: 56%;
-        width: 600px;
-        background: blueviolet;
-        color: black;
+    .smellaway {
+        padding-left: 10%;
     }
 
     h1 {
         text-align: center;
         font-family: 'Nanum Myeongjo', serif;
-        position: absolute;
-        font-size: 3.5rem;
-        color:red;
-        top:40%;
-        left:50%;
-        transform:translate(-50%,-50%);
+        font-size: 50px;
     }
 
     .pitch {
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 24px;
         font-family: 'Raleway', sans-serif;
-        position: absolute;
-        top: 80%;
-        transform:translate(-50%,-50%);
-
+        padding-bottom: 30px;
+        
     }
 
     .StartBtn {
-        position: absolute;
-        top: 100%;
-        left: 37%;
-        width: 155px;
-        height: 60px;
-        font-size: 18px;
+        width: 200px;
+        height: 90px;
+        font-size: 22px;
         border: none;
-        background: rgba(146, 107, 90, 0.63);
-        color: white;
+        background: rgba(186, 162, 151, 1);
+        color: black;
         border-radius: 4%;
         font-family: 'Raleway', sans-serif;
     }
     
-    // .StartBtn:hover {
-    //     background: #926B5A;
-    // }
-}
-
-.reference {
-    background: blue;
-    width: 30%;
-    height: 20%;
-    padding: 20px;
-    position: absolute;
-    top: 120%;
-    left: 57%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-    .star {
-        width: 30px;
-        height: 30px;
-        padding-left: 20px;
+    .StartBtn:hover {
+        background: #926B5A;
     }
 }
 
@@ -159,7 +112,9 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;   
+    align-items: center;
+    padding-top: 120px;
+     
     .eachreview {
         width: 300px;
         height: 150px;
@@ -168,11 +123,11 @@ body {
     .morereviews {
         color: black;
         font-family: 'Poppins', sans-serif;
-        font-size: 18px;
+        font-size: 14px;
     }
 }
 
-.footerSP {
+footer {
     background: rgba(146, 107, 90, 0.63);
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
@@ -180,7 +135,8 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    padding: 30px;  
+    padding: 30px; 
+   
     
     .minilogo {
         width: 200px;
@@ -198,50 +154,165 @@ body {
     }
 }
 
-// @media (min-width: 1045px) {
-//     .wholemain {
+@media screen and (max-width: 860px) {
+
+    .header-right {
+        float: left;
+        .icons {
+            width: 10px;
+            height: 10px;
+        }
+      }
+
+    .header a {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .minilogo {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .searchicon {
+        width: 10px;
+        height: 10px;
+      }
+    .searchbar {
+        width: 80px;
+    }
+
+    .textwrapper {
+        flex-direction: column;
+
     
-//         .backgroundimg {
-//             width: 100%;
-//             height: 100%;
-//         }
+        .textposition {
+            width: 350px;
+            border-radius: 4px;
+        }
     
-//         .slogan {
-//             position: absolute;
-//             top: 50%;
-//             left: 36%;
-//             width: 600px;
-//             color: black;
-//         }
+        .smellaway {
+            padding: 5%;
+        }
     
-//         h1 {
-//             text-align: center;
-//             font-size: 60px;
-//             font-family: 'Nanum Myeongjo', serif;
-//         }
+        h1 {
+            font-size: 30px;
+        }
     
-//         .pitch {
-//             text-align: center;
-//             font-size: 24px;
-//             font-family: 'Raleway', sans-serif;
-//         }
+        .pitch {
+            font-size: 16px;
+        }
     
-//         .StartBtn {
-//             position: absolute;
-//             top: 100%;
-//             left: 37%;
-//             width: 155px;
-//             height: 60px;
-//             font-size: 18px;
-//             border: none;
-//             background: rgba(146, 107, 90, 0.63);
-//             color: white;
-//             border-radius: 4%;
-//             font-family: 'Raleway', sans-serif;
-//         }
+        .StartBtn {
+            width: 150px;
+            height: 60px;
+            font-size: 12px;
+        }
+    
+    // .textposition {
+    //     position: relative;
+    //   }
+    
+    //   .textwrapper {
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: center;
+    //     align-items: center;
+    //     position: absolute;
+    //     top: 30%;
+    //     left: 35%;
+    
+    //     h1 {
+    //         text-align: center;
+    //         font-family: 'Nanum Myeongjo', serif;
+    //         font-size: 24px;
+    //     }
+    
+    //     .pitch {
+    //         text-align: center;
+    //         font-size: 12px;
+    //         font-family: 'Raleway', sans-serif;
+    //     }
+    
+    //     .StartBtn {
+    //         width: 100px;
+    //         height: 30px;
+    //         font-size: 10px;
+    //         border: none;
+    //         background: rgba(146, 107, 90, 0.63);
+    //         color: white;
+    //         border-radius: 4%;
+    //         font-family: 'Raleway', sans-serif;
+    //     }
+    // }
+    
+    .reviews {   
+        padding-top:150px;
+        padding-bottom: 50px;
+
+        .eachreview {
+            width: 100px;
+            height: 50px;
+        }
+    
+        .morereviews {
+            font-size: 8px;
+        }
+    }
+
+
+    footer {
+        width: 100%;
         
-//         .StartBtn:hover {
-//             background: #926B5A;
-//         }
-//     }
-// }
+        .minilogo {
+            width: 100px;
+            height: 15px;
+            padding-right: 20px;
+        }
+
+        .copyright {
+            font-size: 8px;
+        }
+
+        .underside {
+            font-size: 12px;
+        }
+    }
+
+    }
+
+    .reviews {
+        justify-content: space-evenly;
+        padding-top: 250px;
+         
+        .eachreview {
+            width: 80px;
+            height: 40px;
+        }
+    
+        .morereviews {
+            color: black;
+            font-family: 'Poppins', sans-serif;
+            font-size: 7px;
+        }
+    }
+
+    footer {  
+        
+        .minilogo {
+            width: 90px;
+            height: 10px;
+            padding-right: 20px;
+        }
+
+        .copyright {
+            font-size: 8px;
+        }
+        
+        .underside {
+            font-size: 14px;
+            padding-right: 20px;
+        }
+    }
+}

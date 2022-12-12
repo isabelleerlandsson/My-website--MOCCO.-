@@ -5,77 +5,49 @@ body {
     background: rgba(249, 249, 249, 1);
 }
 
-.wholenavbar {
+// NAVBAR
+.header {
+    overflow: hidden;
     background: white;
     width: 100%;
-    height: 100px;
     border-bottom: 5px solid #926B5A; 
+    padding: 20px 10px;
+
+    .logo {
+        width: 100px;
+        height: 15px;
+    }
+  }
+  /* Style on links */
+.header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    padding-right: 30px;
+}
+  
+.header-left {
+    float: left;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     align-items: center;
+}
+  
+.searchicon {
+    width: 20px;
+    height: 20px;
+    padding-right: 10px;
+}
 
-    .firstnavpart {
+.header-right {
+    float: right;
 
-        .AboutUs {
-            text-decoration: none;
-            color: black ;
-            font-family: 'Poppins', sans-serif;
-            font-size: 18px;
-        }
-
-        .Products {
-            text-decoration: none;
-            padding: 30px;
-            color: black ;
-            font-family: 'Poppins', sans-serif;
-            font-size: 18px;
-        }
-        
-        .Contact {
-            text-decoration: none;
-            color: black ;
-            font-family: 'Poppins', sans-serif;
-            font-size: 18px;
-        }
-    }
-
-    .secondnavpart {
-
-        .logo {
-            width: 290px;
-            height: 43px;
-            padding-top: 10px;
-        } 
-    }
-
-    .thirdnavpart {
-
-        .search {
-            font-family: 'Poppins', sans-serif;
-            width: 25px;
-            height: 25px;
-        }
-    }
-
-    .fourthnavpart {
-
-        .shoppingbag {
-            width: 25px;
-            height: 30px;
-        }
-        
-        .favorites {
-            width: 30px;
-            height: 30px;
-            padding-left: 60px;
-            padding-right: 60px; 
-        }
-        
-        .user {
-            width: 25px;
-            height: 30px;
-        }
+    .icons {
+        width: 20px;
+        height: 20px;
     }
 }
 
@@ -139,7 +111,7 @@ h1 {
     background: rgba(146, 107, 90, 0.63);
     color: white;
     padding: 1px 40px;
-    font-size: 60px;
+    font-size: 50px;
   }
 }
 
@@ -183,5 +155,30 @@ h1 {
         color: black ;
         font-family: 'Poppins', sans-serif;
         font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .allreviews {
+        flex-direction: column;
+    }
+    
+    .footerSP {
+
+        .minilogo {
+            width: 100px;
+            height: 15px;
+            padding-right: 20px;
+        }
+
+        .copyright {
+            font-size: 12px;
+        }
+
+        .underside {
+            font-size: 12px;
+        }
     }
 }

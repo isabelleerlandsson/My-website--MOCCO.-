@@ -205,6 +205,14 @@ ul li:last-of-type {
 
     .contactmessage { // Text box
         padding: 5px;
+
+        .subject {
+            width: 380px;
+            height: 40px;
+            font-size: 18px;
+            color: grey;
+
+        }
     
         textarea {
             font-family: 'Poppins', sans-serif;
@@ -316,7 +324,7 @@ ul li:last-of-type {
 
 
       .leftside  .userinfo { // Style on text field
-            width: 200px;
+            width: 250px;
             height: 20px;
             font-size: 12px;
         }
@@ -324,19 +332,26 @@ ul li:last-of-type {
         .number {
 
         .countrynumber{
-            width: 25px;
-            height: 10px;
+            width: 40px;
+            height: 20px;
             font-size: 12px;
         }
 
         .phonenumber {
-            width: 132px;
-            height: 10px;
+            width: 170px;
+            height: 20px;
             font-size: 12px;
         }
     }
 
     .rightside .contactmessage {
+
+        .subject {
+            width: 280px;
+            height: 40px;
+            font-size: 12px;
+            color: grey;
+        }
     
             textarea {
             font-size: 12px;
@@ -356,4 +371,21 @@ ul li:last-of-type {
 
         }
 }    
+
+.footerSP {
+
+    .minilogo {
+        width: 100px;
+        height: 15px;
+        padding-right: 20px;
+    }
+
+    .copyright {
+        font-size: 12px;
+    }
+
+    .underside {
+        font-size: 12px;
+    }
+}
 }
