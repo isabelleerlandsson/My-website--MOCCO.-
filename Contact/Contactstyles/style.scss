@@ -8,7 +8,6 @@ body {
 .header {
     overflow: hidden;
     background: white;
-    width: 100%;
     border-bottom: 5px solid #926B5A; 
     padding: 20px 10px;
 
@@ -24,9 +23,9 @@ body {
     text-align: center;
     padding: 12px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 12px;
     font-family: 'Poppins', sans-serif;
-    padding-right: 30px;
+    padding-right: 5px;
   }
   
   .header-left {
@@ -36,17 +35,20 @@ body {
   }
   
   .searchicon {
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     padding-right: 10px;
   }
 
+  .searchbar {
+    width: 60px;
+}
   .header-right {
-    float: right;
+    float: left;
 
     .icons {
-        width: 20px;
-        height: 20px;
+        width: 10px;
+        height: 10px;
     }
   }
 
@@ -56,14 +58,14 @@ body {
 	margin: 30px 0;
 	transform: translate(-50%, 0);
 	background-color: #fefffa;
-	max-width: 700px;
+	max-width: 300px;
 	padding: 30px;
     box-shadow: 0 4px 8px 0 rgba(146, 107, 90, 0.5), 0 6px 20px 0 rgba(146, 107, 90, 0.3); 
 }
 
 h1 {
     font-family: 'Raleway', sans-serif;
-    font-size: 50px;
+    font-size: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,13 +74,13 @@ h1 {
 
 h2 { // Style på rubriken 
     font-family: 'Poppins', sans-serif;
-    font-size: 24px;
+    font-size: 18px;
     margin: 0;
     cursor: pointer;
 }
 p { // Style på beskrivning
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
+    font-size: 14px;
     margin: 5px;
     padding: 2px;
 }
@@ -146,13 +148,14 @@ ul li:last-of-type {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 80px;
+    text-align: center;
+    padding-top: 60px;
     font-family: 'Raleway', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
 }
 .column {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 50px;
@@ -166,11 +169,11 @@ ul li:last-of-type {
     align-items: center;
 
     .userinfo { // Style on text field
-        width: 400px;
-        height: 40px;
+        width: 250px;
+        height: 20px;
         padding: 10px;
         margin: 15px;
-        font-size: 18px;
+        font-size: 12px;
         margin-right: 35px;
 
     }
@@ -180,19 +183,19 @@ ul li:last-of-type {
     padding: 10px;
 
     .countrynumber {
-        width: 60px;
-        height: 30px;
+        width: 40px;
+        height: 20px;
         padding: 10px;
         margin: 5px;
-        font-size: 18px;
+        font-size: 12px;
     }
 
     .phonenumber {
-        width: 300px;
-        height: 30px;
+        width: 167px;
+        height: 20px;
         padding: 10px;
         margin: 5px;
-        font-size: 18px;
+        font-size: 12px;
         margin-right: 30px;
     }
 }
@@ -207,32 +210,32 @@ ul li:last-of-type {
         padding: 5px;
 
         .subject {
-            width: 380px;
+            width: 280px;
             height: 40px;
-            font-size: 18px;
+            font-size: 12px;
             color: grey;
 
         }
     
         textarea {
             font-family: 'Poppins', sans-serif;
-            font-size: 16px;
-            width: 380px;
+            font-size: 12px;
+            width: 280px;
             height: 200px;
         }
     
         .choosefile {
-            font-size: 18px;
+            font-size: 12px;
             font-family: 'Poppins', sans-serif;
         }
     
         .sendmessage { // Button to send message
-            width: 170px;
-            height: 50px;
+            width: 140px;
+            height: 40px;
             margin-top: 12px;
-            font-size: 16px;
+            font-size: 12px;
             border: none;
-            color: white;
+            color: black;
             background: rgba(146, 107, 90, 0.63);
             border-radius: 4%;
             font-family: 'Poppins', sans-serif;
@@ -271,121 +274,166 @@ ul li:last-of-type {
     }
 }
 
-.footerSP {
+footer {
+    width: 100%;
     background: rgba(146, 107, 90, 0.63);
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
-    padding: 50px;  
+    align-items: center; 
+   
     
     .minilogo {
-        width: 200px;
-        height: 30px;
+        width: 100px;
+        height: 15px;
+        padding-right: 20px;
     }
-
+    
+    .copyright {
+        font-size: 8px;
+    }
     .underside {
         display: flex;
         flex-direction: column;
         text-decoration: none;
         color: black ;
         font-family: 'Poppins', sans-serif;
-        font-size: 18px;
+        font-size: 10px;
     }
 }
 
 
-@media screen and (max-width: 500px) {
-    #wrapper {
-        max-width: 400px;
+@media (min-width: 890px) {
+
+.header {
+    .logo {
+        width: 200px;
+        height: 30px;
+    }
+}
+
+.header-right {
+    float: right;
+    .icons {
+        width: 20px;
+        height: 20px;
+    }
     }
 
-    h2 {
+.header a {
+    font-size: 18px;
+    padding: 30px;
+}
+
+.searchicon {
+    width: 20px;
+    height: 20px;
+    }
+.searchbar {
+    width: 200px;
+}
+#wrapper {
+    max-width: 500px;
+}
+h1 {
+    font-size: 50px;
+}
+h2 {
+    font-size: 24px;
+}
+p {
+    font-size: 18px;
+}
+#wrapper {
+    width: 700px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 14px;
+}
+
+.formintro {
+    font-size: 24px;
+}
+    
+.column {
+    flex-direction: row;
+
+}
+
+.leftside  {
+
+    .userinfo { // Style on text field
+        width: 400px;
+        height: 40px;
+        font-size: 18px;
+    }
+}
+
+.number {
+
+    .countrynumber{
+        width: 60px;
+        height: 30px;
         font-size: 18px;
     }
 
-    p {
-        font-size: 14px;
+    .phonenumber {
+        width: 300px;
+        height: 30px;
+        font-size: 18px;
     }
+}
 
-    .formintro {
-        font-size: 20px;
-        text-align: center;
-    }
-        .column {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 50px;
-        }
+.rightside {
 
-
-      .leftside  .userinfo { // Style on text field
-            width: 250px;
-            height: 20px;
-            font-size: 12px;
-        }
-    
-        .number {
-
-        .countrynumber{
-            width: 40px;
-            height: 20px;
-            font-size: 12px;
-        }
-
-        .phonenumber {
-            width: 170px;
-            height: 20px;
-            font-size: 12px;
-        }
-    }
-
-    .rightside .contactmessage {
+    .contactmessage {
 
         .subject {
-            width: 280px;
+            width: 380px;
             height: 40px;
-            font-size: 12px;
-            color: grey;
+            font-size: 18px;
         }
     
             textarea {
-            font-size: 12px;
-            width: 280px;
+            font-size: 16px;
+            width: 380px;
             height: 200px;
         }
 
             .choosefile {
-            font-size: 12px;
+            font-size: 18px;
         }
 
         .sendmessage { // Button to send message
-            width: 140px;
-            height: 40px;
+            width: 170px;
+            height: 50px;
             margin-top: 12px;
             font-size: 16px;
-
         }
+    }
 }    
 
-.footerSP {
-
+footer {  
+        
     .minilogo {
-        width: 100px;
-        height: 15px;
+        width: 200px;
+        height: 30px;
         padding-right: 20px;
     }
 
     .copyright {
         font-size: 12px;
     }
-
+    
     .underside {
-        font-size: 12px;
+        font-size: 18px;
+        padding-right:20px;
     }
 }
 }

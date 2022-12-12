@@ -8,7 +8,6 @@ body {
 .header {
   overflow: hidden;
   background: white;
-  width: 100%;
   border-bottom: 5px solid #926B5A;
   padding: 20px 10px;
 }
@@ -24,9 +23,9 @@ body {
   text-align: center;
   padding: 12px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 12px;
   font-family: "Poppins", sans-serif;
-  padding-right: 30px;
+  padding-right: 5px;
 }
 
 .header-left {
@@ -36,17 +35,21 @@ body {
 }
 
 .searchicon {
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   padding-right: 10px;
 }
 
+.searchbar {
+  width: 60px;
+}
+
 .header-right {
-  float: right;
+  float: left;
 }
 .header-right .icons {
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
 }
 
 h1 {
@@ -54,12 +57,12 @@ h1 {
   justify-content: center;
   align-items: center;
   font-family: "Raleway", sans-serif;
-  font-size: 46px;
+  font-size: 36px;
 }
 
 .allreviews {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 30px;
@@ -119,42 +122,71 @@ h1 {
   font-family: "Poppins", sans-serif;
 }
 
-.footerSP {
+footer {
+  width: 100%;
   background: rgba(146, 107, 90, 0.63);
   font-family: "Poppins", sans-serif;
-  font-size: 18px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  padding: 50px;
 }
-.footerSP .minilogo {
-  width: 200px;
-  height: 30px;
+footer .minilogo {
+  width: 100px;
+  height: 15px;
+  padding-right: 20px;
 }
-.footerSP .underside {
+footer .copyright {
+  font-size: 8px;
+}
+footer .underside {
   display: flex;
   flex-direction: column;
   text-decoration: none;
   color: black;
   font-family: "Poppins", sans-serif;
-  font-size: 18px;
+  font-size: 10px;
 }
 
-@media screen and (max-width: 500px) {
-  .allreviews {
-    flex-direction: column;
+@media (min-width: 1020px) {
+  .header .logo {
+    width: 200px;
+    height: 30px;
   }
-  .footerSP .minilogo {
-    width: 100px;
-    height: 15px;
+  .header-right {
+    float: right;
+  }
+  .header-right .icons {
+    width: 20px;
+    height: 20px;
+  }
+  .header a {
+    font-size: 18px;
+    padding: 30px;
+  }
+  .searchicon {
+    width: 20px;
+    height: 20px;
+  }
+  .searchbar {
+    width: 200px;
+  }
+  .allreviews {
+    flex-direction: row;
+  }
+  h1 {
+    font-size: 46px;
+  }
+  footer .minilogo {
+    width: 200px;
+    height: 30px;
     padding-right: 20px;
   }
-  .footerSP .copyright {
+  footer .copyright {
     font-size: 12px;
   }
-  .footerSP .underside {
-    font-size: 12px;
+  footer .underside {
+    font-size: 18px;
+    padding-right: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
