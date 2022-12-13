@@ -60,7 +60,7 @@ body {
 }
 .allitems .cards {
   width: 250px;
-  height: 380px;
+  height: 440px;
   background: white;
   box-shadow: 0 4px 8px 0 rgba(146, 107, 90, 0.5), 0 6px 20px 0 rgba(146, 107, 90, 0.3);
   margin: 40px;
@@ -110,10 +110,16 @@ body {
 .allitems .basketBtn:hover {
   background-color: rgb(146, 107, 90);
 }
-.allitems p {
+.allitems .price {
   padding-left: 20px;
   font-size: 14px;
   font-family: "Poppins", sans-serif;
+}
+.allitems .description {
+  font-size: 10px;
+  text-align: center;
+  width: 180px;
+  font-family: "Raleway", sans-serif;
 }
 
 .switchpage {
@@ -186,7 +192,7 @@ footer .underside {
   }
   .allitems .cards {
     width: 400px;
-    height: 580px;
+    height: 640px;
   }
   .allitems .cards .eachitem {
     width: 400px;
@@ -202,15 +208,19 @@ footer .underside {
     flex-direction: row;
   }
   .allitems h1 {
-    font-size: 18px;
+    font-size: 22px;
   }
   .allitems .basketBtn {
     width: 155px;
     height: 40px;
     font-size: 16px;
   }
-  .allitems p {
+  .allitems .price {
     font-size: 20px;
+  }
+  .allitems .description {
+    font-size: 14px;
+    width: 300px;
   }
   footer .minilogo {
     width: 200px;
